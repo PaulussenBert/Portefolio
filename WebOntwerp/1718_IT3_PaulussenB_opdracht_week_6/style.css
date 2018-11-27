@@ -1,0 +1,239 @@
+body {
+    margin: 0px;
+    background-color : powderblue;
+    height: 100vh;
+}
+
+.pijl {
+    position: absolute;
+    height: 30px;
+    width: 25px;
+    left: 20px;
+}
+
+svg {
+    position: absolute; /* Neem scrollbalk weg */
+    bottom: 0px;
+    z-index: -1; /* Houdt tekst op voorgrond */
+}
+
+h1 {
+    position: absolute;
+    top: 10vw;
+    right: 14%;
+    color: #FFFFFF;
+    text-shadow: rgba(255,255,255,0.4) 2px 2px;
+    width: 32%;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vw;
+    animation: tekst 8s linear infinite;
+}
+
+#Bert {
+    width: 20%;
+    position: absolute;
+    top: 2vw;
+    right:20%;
+}
+
+a img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+
+.st0 {
+  animation: windy 3s linear infinite;
+}
+
+#cloudA, #cloudB {
+    animation: moveClouds 40s linear infinite;
+}
+
+#cloudC {
+    animation: moveClouds2 30s linear infinite;
+}
+
+#cloudE, #cloudD {
+    animation: moveClouds3 50s linear infinite;
+}
+
+.st1:nth-child(even) {
+    animation: wavy 4.5s linear infinite;
+}
+
+.st1:nth-child(odd) {
+    animation: wavy2 4s linear infinite;
+}
+
+#body {
+    animation: breathe 4s linear infinite;
+}
+
+.st4 {
+    animation: breathe2 4s linear infinite;
+}
+
+#eyeL, #eyeR {
+    animation: look 30s linear infinite;
+}
+
+
+@keyframes breathe {
+    0% {
+        transform: translatey(0.05%);
+    }
+    50%{
+        transform: translatey(-0.05%);
+    }
+    100%{
+        transform: translatey(0.05%);
+    }
+}
+
+@keyframes breathe2 {
+    0% {
+        transform: translatey(0.1%);
+    }
+    50%{
+        transform: translatey(-0.1%);
+    }
+    100%{
+        transform: translatey(0.1%);
+    }
+}
+
+@keyframes look {
+  17.5%{
+    transform: scaleY(1);    
+  } 
+  18%{
+    transform: scaleY(0.98);    
+  } 
+  24.5%{
+    transform: scaleY(0.98);    
+  } 
+  25%{
+    transform: scaleY(1);    
+  }
+  70.5%{
+    transform: scaleX(1);    
+  } 
+  71%{
+    transform: scaleX(0.99);    
+  } 
+  78%{
+    transform: scaleX(0.99);    
+  } 
+  78.5%{
+    transform: scaleX(1);    
+  }   
+  
+}
+
+
+@keyframes moveClouds {
+  0% {
+    transform: translatex(220%);
+  }
+  99.999999999% {
+    transform: translateX(-350%);
+  }
+  100% {
+    transform: translateX(220%);
+  }
+}
+
+@keyframes moveClouds2 {
+  0% {
+    transform: translatex(350%);
+  }
+  99.999999999% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(350%);
+  }
+}
+
+@keyframes moveClouds3 {
+  0% {
+    transform: translatex(300%);
+  }
+  99.999999999% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes windy {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+
+}
+
+@keyframes wavy {
+  0% {
+    transform: translateY(5%);
+    transform: translateX(1%);
+  }
+  25% {
+    transform: translateX(-1%);
+  }
+  50% {
+    transform: translateY(0%);
+    transform: translateX(1%);
+  }
+    75% {
+        transform: translateX(-1%);
+    }
+  100% {
+    transform: translateY(5%);
+    transform: translateX(1%);
+  }
+
+}
+
+@keyframes wavy2 {
+  0% {
+    transform: translateY(0%);
+    transform: rotate(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+    transform: rotate(5%);
+  }
+  100% {
+    transform: translateY(0%);
+      transform: rotate(-5%);
+  }
+}
+
+
+@keyframes tekst {
+    0% {
+        transform: skewX(-1deg);
+        transform: skewY(-1deg);
+    }
+    50% {
+        transform: skewX(1deg);
+        transform: skewY(1deg);
+    }
+    100% {
+        transform: skewX(-1deg);
+        transform: skewY(-1deg);
+    }
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Forms Opdracht</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet">
+
+		<meta charset="utf-8">
+        
+	</head>
+	<body>
+        <h1>VIRUS REMOVE.exe</h1>
+        <form>
+            
+            <p id="warwar">
+                WARNING! WARNING!
+                Give us all your personal information to remove the virus.</p>
+            <div>
+                <label id="lvoornaam" for="naam">Name</label>
+                <input id="voornaam" type="text">
+                <label id="lnaam" for="naam">First name</label>
+            <input id="naam" type="text">
+            <label id="lfacebook" for="facebook">Facebook (url)</label>
+            <input id="facebook" type="url">
+            
+            <label id="lpassword" for="password">Facebook password </label>
+            <input id="password" type="password">
+            
+            <label id="lemailadres" for="emailadres">Mail</label>
+            <input id="emailadres" type="email">
+            </div>
+            <div>
+            
+            
+            <label for="telefoon" id="ltelefoon">Phone number</label>
+            <input id="telefoon" type="tel">
+            <label for="banknumber" id="lbanknumber">Banknumber</label>
+            <input id="banknumber" type="number" maxlength="16"
+                min="0" max="999999999999999">
+            <label for="pinnumber" id="lpinnumber">Favored pin number</label>
+            <input id="pinnumber" type="number" maxlength="4"
+                min="0" max="9999">
+            
+            
+            <label for="geboortedatum" id="lgeboortedatum">Birthdate</label>
+            <input id="geboortedatum" type="date">
+                
+            <label for="uurgeboorte" id="luurgeboorte">Hour Birth</label>
+            <input id="uurgeboorte" type="time">
+            </div>
+            <div>
+            
+            
+            <label for="land" id="lland">
+            Country
+            </label>
+            <select id="land">
+                <option value="BE">Belgie</option>
+                <option value="NL">Nederland</option>
+                <option value="FR">France</option>
+                <option value="DE">Deutschland</option>
+                <option value="UK">United Kingdom</option>
+                <option value="LU">Luxembourg</option>
+                <option value="OT">Some other country</option>
+                </select>
+
+            <label for="zoeken" id="lzoeken">Eye Color</label>
+            <input id="zoeken" type="color">
+
+            <label for="further" id="lfurther">
+            Relatives bank information
+            </label>
+            <textarea id="further"></textarea>
+            
+            <input type="checkbox" id="check" value="worth"><span id="lcheck">I have rich relatives and it's worth the effort.</span>
+            </div>
+            
+            <p id="promise">We'll use your information for virus removal services only. We promise.</p>
+            
+            <div id="knopdiv">
+            <input id="knop" type="submit" value="Submit all info  &#10004">
+            </div>
+        </form>
+        
+        
+        
+	</body>
+</html>

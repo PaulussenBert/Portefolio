@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+
+body {
+    max-width: 720px;
+    margin: auto;
+    background-image: url(images/kodak_bw400cn_texture_by_drenton.jpg);
+    background-position: center;
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Skranji", cursive;
+    color: black;
+}
+
+.box {
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0px;
+    background-color: white;
+}
+
+.innerbox {
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    background-color: #f2d191;
+    border: 0px solid black;
+}
+
+#innerboxOne {
+    width: 500px;
+    height: 232.5px;
+    border-width: 2px;
+}
+
+.arrowR {
+    display: inline-block;
+    height: 35px;
+    background-image: url(images/arrow_sans_right-512.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 197.5px;
+}
+
+.arrowL {
+    display: inline-block;
+    height: 35px;
+    background-image: url(images/arrow_sans_left-512.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 197.5px;
+}
+
+#arrowROne{
+    margin-left: 5px;
+    width: 35px;
+}
+
+#arrowLTwo, #arrowRTwo, #arrowLThree, #arrowRThree, #arrowLFour {
+    width: 0px;
+    display: inline-block;
+}
+
+
+/* ANIMATIES */ 
+
+#Wenkbrouw {
+    animation: Brows 4s linear infinite;
+}
+
+#Spin, #Laag_2 {
+    animation: creeping 10s linear infinite;
+}
+
+#Tekstballon {
+    animation: tekstballon 20s linear infinite;
+}
+
+#innerboxTwo #Tekstballon {
+    animation: tekstballonFlippin 1s linear infinite;
+    transform-origin: center;
+}
+
+#Tekst {
+    animation: tekst 15s linear infinite;
+}
+
+#Mond { 
+    position: absolute;
+    top: 50px;
+    animation: yellin 1s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes Brows {
+    0% {
+        transform: translatey(5%);
+    }
+    47%{
+        transform: translateY(5%); 
+    }
+    50%{
+        transform: translatey(0%);
+    }
+    53% {
+        transform: translateY(5%);
+    }
+    56% {
+        transform: translatey(0%);
+    }
+    59% {
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translatey(5%);
+    }
+}
+
+@keyframes creeping {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    18% {
+        transform: translate(0%, 0%);
+    }
+    20% {
+        transform: translate(5%, 30%);
+    }
+    38% {
+        transform: translate(5%, 30%);
+    }
+    40% {
+        transform: translate(-5%, 15%);
+    }
+    58% {
+        transform: translate(-5%, 15%);
+    }
+    60% {
+        transform: translate(3%, 5%);
+    }
+    78% {
+        transform: translate(3%, 5%);
+    }
+    80% {
+        transform: translate(-6%, 35%);
+    }
+    98%{
+        transform: translate(-6%, 35%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes tekstballon {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    8% {
+        transform: translate(0.5%, 0.5%);
+    }
+    20% {
+        transform: translate(0.2%, 0.3%);
+    }
+    28% {
+        transform: translate(0.4%, -0.4%);
+    }
+    40% {
+        transform: translate(-0.0%, 0.1%);
+    }
+    48% {
+        transform: translate(-0.2%, -0.2%);
+    }
+    60% {
+        transform: translate(0.2%, -0.3%);
+    }
+    68% {
+        transform: translate(-0.3%, 0.4%);
+    }
+    80% {
+        transform: translate(-0.1%, 0.1%);
+    }
+    88%{
+        transform: translate(-0.4%, 0.6%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes tekst {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    8% {
+        transform: translate(0.3%, 1%);
+    }
+    20% {
+        transform: translate(0.2%, 0%);
+    }
+    28% {
+        transform: translate(-0.1%, -0.8%);
+    }
+    40% {
+        transform: translate(0.1%, 0.2%);
+    }
+    48% {
+        transform: translate(-0.2%, -0.6%);
+    }
+    60% {
+        transform: translate(0.2%, -0.0%);
+    }
+    68% {
+        transform: translate(-0.2%, 0.8%);
+    }
+    80% {
+        transform: translate(-0.1%, 0.1%);
+    }
+    88%{
+        transform: translate(0.1%, 0.6%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes tekstballonFlippin {
+    0% {
+        transform: rotate(1deg);
+    }
+    25% {
+        transform: rotate(-1.4deg);
+    }
+    50% {
+        transform: rotate(1.3deg);
+    }
+    75% {
+        transform: rotate(-1.2deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes yellin {
+    0% {
+        transform: scaleY(1.1);
+    }
+    19%{
+        transform: scaleY(0.7); 
+    }
+    36%{
+        transform: scaleY(1.1);
+    }
+    56% {
+        transform: scaleY(0.7);
+    }
+    73% {
+        transform: scaleY(1.2);
+    }
+    89% {
+        transform: scaleY(0.8);
+    }
+    100%{
+        transform: scaleY(1.1);
+    }
+}
+
+p{
+    font-size: 12px;
+    margin-top: 10px;
+        font-family: "Skranji", cursive;
+}
+
+

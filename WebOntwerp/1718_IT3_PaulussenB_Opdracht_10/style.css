@@ -1,0 +1,706 @@
+body {
+    font-size: 13px;
+    margin: 2px;
+    font-family: 'VT323', monospace;
+    color: white;
+    background-color: blue ;
+}
+
+form {
+    width: 100%;
+    max-width: 900px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-top: 2vh;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Press Start 2P', cursive;
+    animation: warning 10s linear;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
+
+
+p {
+    padding: 20px;
+}
+
+div {
+    justify-self: center;
+    width: 150px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input, textarea {
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: 150px;
+    font-size: 12px;
+}
+
+#knop {
+    color: white;
+    background-color: limegreen;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+
+
+
+
+@media screen and (min-width: 500px)
+{
+    form {
+        padding-top: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    p   {
+        font-size: 18px;
+    }
+    
+    h1, p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    }
+    
+    #knopdiv {
+        grid-column: 2;
+    }
+    
+    #knop {        
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    body {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    label {
+        font-size: 20px;
+        width: 220px;
+    }
+    
+    div {
+        width: 230px;
+    }
+    
+    input, select, textarea {
+        width: 220px;
+        line-height: 20px;
+    }
+    
+    #knop{
+        
+    }
+    
+    p {
+        font-size: 22px;
+    }
+}
+
+
+/* ANIMATION */
+#lvoornaam {
+    animation: formopenA 10s linear;
+}
+
+#voornaam {
+    animation: formopenB 10s linear;
+}
+
+#lnaam {
+    animation: formopenC 10s linear ;
+}
+
+#naam {
+    animation: formopenD 10s linear ;
+}
+
+#lfacebook {
+    animation: formopenE 10s linear ;
+}
+
+#facebook {
+    animation: formopenF 10s linear ;
+}
+
+#lpassword {
+    animation: formopenG 10s linear ;
+}
+
+#password {
+    animation: formopenH 10s linear;
+}
+
+#lemailadres {
+    animation: formopenI 10s linear;
+}
+
+#emailadres {
+    animation: formopenJ 10s linear;
+}
+
+#ltelefoon {
+    animation: formopenK 10s linear;
+}
+
+#telefoon {
+    animation: formopenL 10s linear;
+}
+
+#lbanknumber {
+    animation: formopenM 10s linear;
+}
+
+#banknumber {
+    animation: formopenN 10s linear;
+}
+
+#lpinnumber {
+    animation: formopenO 10s linear;
+}
+
+#pinnumber {
+    animation: formopenP 10s linear;
+}
+
+#lgeboortedatum {
+    animation: formopenQ 10s linear;
+}
+
+#geboortedatum {
+    animation: formopenR 10s linear;
+}
+
+#luurgeboorte {
+    animation: formopenS 10s linear;
+}
+
+#uurgeboorte {
+    animation: formopenT 10s linear;
+}
+
+#lland {
+    animation: formopenU 10s linear;
+}
+
+#land {
+    animation: formopenV 10s linear;
+}
+
+#lzoeken {
+    animation: formopenW 10s linear;
+}
+
+#zoeken {
+    animation: formopenX 10s linear;
+}
+
+#lfurther {
+    animation: formopenY 10s linear;
+}
+
+#further {
+    animation: formopenZ 10s linear;
+}
+
+#check {
+    animation: formopenAB 10s linear;
+    display: inline-block;
+    width: 20px;
+}
+
+#lcheck {
+    animation: formopenAC 10s linear;
+}
+
+#warwar {
+    animation: scrollA 10s linear;
+}
+
+#promise {
+    animation: scrollB 10s linear;
+}
+
+#knop {
+    animation: formopenAA 10s linear;
+}
+
+@keyframes scrollA {
+    0% {
+        transform: scale(0);
+    }
+    35% {
+        transform: scale(0);
+    }
+    35.01% {
+        transform: scale(1);
+    }
+    
+}
+
+@keyframes scrollB {
+    0% {
+        transform: scale(0);
+    }
+    65% {
+        transform: scale(0);
+    }
+    65.01% {
+        transform: scale(1);
+    }
+}
+
+@keyframes warning {
+    0%{
+        transform: scale(1);
+        top: 250px;
+    }
+    3.05%{
+        transform: scale(1);
+    }
+    3.06% {
+        transform: scale(0);
+    }
+    7% {
+        transform: scale(0);
+    }
+    7.01%{
+        transform: scale(1);
+    }
+    10.05%{
+        transform: scale(1);
+    }
+    10.06% {
+        transform: scale(0);
+    }
+    14% {
+        transform: scale(0);
+    }
+    14.01%{
+        transform: scale(1);
+    }
+    17.05%{
+        transform: scale(1);
+    }
+    17.06% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(0);
+    }
+    20.01%{
+        transform: scale(1);
+        top: 250px;
+    }
+    
+    35% {
+        top: 20px;
+    }
+}
+
+@keyframes formopenA {
+    0%{
+        transform: scale(0);
+    }
+    35% {
+        transform: scale(0);
+    }
+    35.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenB {
+    0%{
+        transform: scale(0);
+    }
+    36% {
+        transform: scale(0);
+    }
+    36.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenC {
+    0%{
+        transform: scale(0);
+    }
+    37% {
+        transform: scale(0);
+    }
+    37.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenD {
+    0%{
+        transform: scale(0);
+    }
+    38% {
+        transform: scale(0);
+    }
+    38.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenE {
+    0%{
+        transform: scale(0);
+    }
+    39% {
+        transform: scale(0);
+    }
+    39.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenF {
+    0%{
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(0);
+    }
+    40.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenG {
+    0%{
+        transform: scale(0);
+    }
+    41% {
+        transform: scale(0);
+    }
+    41.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenH {
+    0%{
+        transform: scale(0);
+    }
+    42% {
+        transform: scale(0);
+    }
+    42.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenI {
+    0%{
+        transform: scale(0);
+    }
+    43% {
+        transform: scale(0);
+    }
+    43.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenJ {
+    0%{
+        transform: scale(0);
+    }
+    44% {
+        transform: scale(0);
+    }
+    44.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenK {
+    0%{
+        transform: scale(0);
+    }
+    45% {
+        transform: scale(0);
+    }
+    45.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenL {
+    0%{
+        transform: scale(0);
+    }
+    46% {
+        transform: scale(0);
+    }
+    46.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenM {
+    0%{
+        transform: scale(0);
+    }
+    47% {
+        transform: scale(0);
+    }
+    47.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenN {
+    0%{
+        transform: scale(0);
+    }
+    48% {
+        transform: scale(0);
+    }
+    48.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenO {
+    0%{
+        transform: scale(0);
+    }
+    49% {
+        transform: scale(0);
+    }
+    49.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenP {
+    0%{
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    50.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenQ {
+    0%{
+        transform: scale(0);
+    }
+    51% {
+        transform: scale(0);
+    }
+    51.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenR {
+    0%{
+        transform: scale(0);
+    }
+    52% {
+        transform: scale(0);
+    }
+    52.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenS {
+    0%{
+        transform: scale(0);
+    }
+    53% {
+        transform: scale(0);
+    }
+    53.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenT {
+    0%{
+        transform: scale(0);
+    }
+    54% {
+        transform: scale(0);
+    }
+    54.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenU {
+    0%{
+        transform: scale(0);
+    }
+    55% {
+        transform: scale(0);
+    }
+    55.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenV {
+    0%{
+        transform: scale(0);
+    }
+    56% {
+        transform: scale(0);
+    }
+    56.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenW {
+    0%{
+        transform: scale(0);
+    }
+    57% {
+        transform: scale(0);
+    }
+    57.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenX {
+    0%{
+        transform: scale(0);
+    }
+    58% {
+        transform: scale(0);
+    }
+    58.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenY {
+    0%{
+        transform: scale(0);
+    }
+    59% {
+        transform: scale(0);
+    }
+    59.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenZ {
+    0%{
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(0);
+    }
+    60.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenAB {
+    0%{
+        transform: scale(0);
+    }
+    61% {
+        transform: scale(0);
+    }
+    61.01%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes formopenAC {
+    0%{
+        color: blue;
+    }
+    62% {
+        color: blue;
+    }
+    62.01%{
+        color: white;
+    }
+
+}
+
+@keyframes formopenAA {
+    0%{
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(0);
+    }
+    70.01%{
+        transform: scale(1);
+    }
+
+}
+
+
+

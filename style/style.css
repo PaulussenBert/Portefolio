@@ -1,0 +1,1034 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Fahkwang');
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* => Body */
+
+html, body {
+    min-height: 100vh;
+}
+
+.wrap {
+  margin-top: 100px;
+    position: relative;
+  overflow: hidden;
+}
+
+body {
+    background-color: grey;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(/Images/Back2.jpg) no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+
+h1, h2, h3 {
+    font-family: 'Fahkwang', sans-serif; 
+}
+
+/* => Header */
+
+header {
+    background-color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0px 0px 20px -1px grey;
+}
+
+.logo-link {
+    padding: 10px;
+}
+
+.logo {
+    grid-column: 1;
+    width: 100%;
+    max-width: 100px;
+    margin: auto;
+    display: inline-block;
+}
+
+.logo-link:hover {
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+/* => Navigatie */
+
+nav a{
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    margin: auto;
+    color: #c1272f;
+    text-decoration: none;
+    text-shadow: 2px -1px 5px #DDDDDD;
+}
+nav {
+    display: inline-grid;
+    color: #c1272f;
+    font-weight: bold;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40px;
+    margin-top: 45px;
+}
+
+/* AANDUIDING Actieve Pagina */
+
+.page-active {
+    border-bottom: 2px #c1272f solid;
+    padding-bottom: 8px;
+}
+
+/* => Main */
+
+main {
+    padding: 3px;
+    padding-top: 10px;
+    padding-bottom: 90px;
+}
+
+/* INDEX */
+
+.index-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.index-main div {
+    background-color: white;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    color: white;
+}
+
+.index-main div a {
+    display: block;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Fahkwang', sans-serif;
+}
+
+.index-main div a span:hover {
+    text-decoration: underline;
+}
+
+.index-main div:hover a span {
+    text-decoration: underline;
+}
+
+#home-WD {
+    background-image: url(/Images/wolf.PNG);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+#home-GO {
+    background-image: url(/Images/Speciaal+Schijfkopie.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+#home-LD {
+    background-image: url(/Images/FlyerStartAct1718-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+#home-C4D {
+    background-image: url(/Images/low-poly-planet.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+#home-more{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#home-more a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 5px;
+    line-height: 20px;
+    align-self: right;
+    background-color: #c1272f;
+}
+
+#home-more a:hover {
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+#home-more, .uitleg {
+    grid-column-end: 3;
+    grid-column-start: 1;
+}
+
+.uitleg {
+    margin: auto;
+    margin-top: 35px;
+    padding: 20px 2% 20px 2%;
+    font-size: 12px;
+    width: 96%;
+}
+
+#uitleg-bzelf {
+    width: 92%;
+    grid-column-end: 2;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#uitleg-bzelf-foto {
+    background-image: url(/Images/bzelf-foto.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+#uitleg-bzelf a {
+    width: 80px;
+    margin: auto;
+    background-color: lightgray;
+    height: 21px;
+    margin-top: 20px;
+    min-height: 0px;
+    padding-top: 2px;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+}
+
+#uitleg-bzelf a:hover {
+    background-color: rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+#uitleg-bzelf p {
+    margin-bottom: 10px;
+}
+
+/* PORTFOLIO */
+
+.portf-main {
+    margin-top:60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 7px;
+}
+
+.portf-main div {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* Portefolio navigatie */
+
+.portf-main-nav {
+    display: grid;
+    line-height: 10px;
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 40px;
+    margin-bottom: 1px;
+    position: fixed;
+    top: 85px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 3px 10px 0px grey;
+    }
+
+.portf-main-nav a {
+    padding-bottom: 11px;
+    text-align: center;
+    line-height: 13px;
+    font-size: 13px;
+    padding-top: 11px;
+    color: white;
+    border-left: 1px solid white;
+    font-weight: bold;
+    background-color: #c1272f;
+
+}
+.portf-main-nav a:first-child {
+    font-size: 50px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 30px 0px 0px 0px;
+}
+
+.portf-main-nav a:hover {
+    background-color: white;
+    color: darkred;
+    transition: 0.25s;
+}
+
+.portf-main-nav-a {
+    color: rgba(0,0,0, 0.2);
+}
+
+.portf-main-nav a:nth-child(3), .portf-main-nav a:nth-child(5) {
+    border-right: 1px solid white;
+} 
+
+/* -- > Portfolio Items */
+
+.portf-item {
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+}
+
+.portf-item a {
+    background-color: white;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.portf-item::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.portf-item:hover .portf-item:before,
+.portf-item:focus .portf-item:before {
+  display: block;
+}
+
+.portf-item:hover, .portf-item:focus{
+    transform: scale(1.03);
+    transition: all 1s;
+}
+
+.portf-item:hover .portf-titels {
+    text-decoration: underline;
+}
+
+
+/* BERT ZELF */
+
+.bert-main {
+    margin-top: 20px;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+}
+
+.bert-main div {
+}
+
+#klj-groot {
+    background-image: url(/Images/Bert-Zelf/bandana.jpg);
+    height: 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+#hoofdfoto {
+    background-image: url(/Images/Bert-Zelf/22154263_10209448398948412_1378984648769740743_n.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#comedy-groot {
+    background-image: url(/Images/Bert-Zelf/leiding);
+    height: 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+#bert-text {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    border: 3px solid rgba(250,250,250,1);
+    background-color: rgba(250,250,250,0.94);
+    }
+
+#bert-text h1 {
+    line-height: 25px;
+}
+    
+    #klj-klein {
+        background-image: url(/Images/Bert-Zelf/leiding.jpg);
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+#comedy-klein {
+    height: 150px;
+    background-image: url(/Images/Bert-Zelf/comedy2.png);
+    background-size: cover;
+}
+    
+
+/* CONTACT */
+
+.contact-main {
+    max-width: 400px;
+    max-height: 500px;
+    margin: auto;
+    width: 82vw;
+    margin-top: 10vh;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: -50px;
+    color: white;
+}
+
+h4 {
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-main-content {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.contact-main div p {
+}
+
+.contact-smlinks {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-gap: 25px;
+}
+
+.contact-smlinks a {
+    height: 50px;
+    box-shadow: 0.5px 0.5px 0.5px 1px rgba(0,0,0,0.2);
+    border-radius: 7px;
+    background-size: cover;
+}
+
+.contact-smlinks a:hover {
+    box-shadow: 0.5px 0.5px 0.5px 1px rgba(0,0,0,0.2);
+}
+
+/* => Footer */
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    position: fixed;
+    bottom: 0px;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 0px;
+}
+
+.footer-title {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.footer-links {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+}
+
+.footer-nav {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 12px;
+    display: grid;
+    font-size: 0px;
+}
+
+.footer-contact {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 80px 30px 30px 30px 30px;
+    font-weight: bold;
+    grid-row: 2;
+    grid-column: 2;
+    grid-row: 30px;
+    margin: auto;
+    grid-column-gap: 5px;
+}
+
+.footer-contact p {
+    height: 20px;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.footer-contact a {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+/*  Non-Mobile  */
+
+@media screen and (min-height: 800px) {
+    .index-body {
+        /*overflow: hidden;*/
+    }
+    
+    .contact-body {
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:560px) {
+    
+    html {
+        height: 120%;
+    }
+    
+    header {
+        grid-template-columns: 1fr 3fr;
+        height: 100px;
+    }
+    
+    .logo {
+        width: 140px;
+    }
+    
+    nav {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 40px;
+        margin-top: 60px;
+    }
+    
+    nav a {
+        font-size: 25px;
+        transition: border 0.2s;
+    }
+    nav a:hover {
+        border-bottom: 3px solid #c1272f;
+        padding-bottom: 7px;
+    }
+    
+    /* INDEX */
+    
+    .index-main {
+        padding: 7px;
+        padding-bottom: 100px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 7px;
+    }
+    
+    .uitleg {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding: 20px 3% 20px 3%;
+        width: 94%;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        position: relative;
+        top: -5px;
+        font-size: 30px;
+    }
+    
+    .index-main div{
+    }
+    
+    .index-main div a {
+        font-size: 20px;
+        padding-top: 150px;
+        padding-bottom: 30px;
+        transition: background 0.2s;
+    }
+    
+    #home-WD a {
+        padding-bottom: 60px;
+    }
+    
+    #home-more {
+    height: 40px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    }
+    
+    #home-more a {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    }
+    
+    
+    .index-main div a:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+    
+    #uitleg-bzelf {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    
+    #uitleg-bzelf a {
+        height: 5px;
+    }
+    
+    
+    /* PORTFOLIO */
+    
+    .portf-main {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .portf-main-nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+        grid-template-columns: 70px 1fr 1fr 1fr 1fr;
+        top: 100px;
+    }
+    
+    .portf-main-nav a:first-child {
+    font-size: 50px;
+    height: 50%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+        padding: 10px;
+    }
+    
+    .portf-main-nav a {
+    padding-top: 15px;
+    }
+    
+    .portf-main-nav a:nth-child(3) {
+    border-right: 0px solid white;
+} 
+    
+    .portf-main-nav a:nth-child(5) {
+    border-right: 1px solid white;
+    } 
+    
+    
+    
+    /* BERT ZELF */
+    .bert-main {
+        margin-top: 60px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #klj-groot, #comedy-groot {
+        height: 400px;
+    }
+    
+    #klj-groot {
+        
+    }
+    
+    #comedy-groot {
+        grid-column-start: 2;
+        grid-row: 1;
+        grid-column-end: 4;
+        background-image: url(/Images/Bert-Zelf/leiding.jpg);
+        
+    }
+    
+    #bert-text {
+        position: absolute;
+        z-index: 2;
+        left: 10%;
+        bottom: 200px;
+        width: 75%;
+        border-right: 3px solid rgba(0, 0, 0, .05);
+        border-bottom: 3px solid rgba(0, 0, 0, .05);
+        font-size: 12px;
+    }
+    
+    #bert-text h2 {
+        font-size: 15px;
+    }
+    
+    #klj-klein {
+        background-image: url(/Images/Bert-Zelf/comedy2.png);
+        background-size: cover;
+        background-position: center;
+        height: 290px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-repeat: no-repeat;
+        background-color: rgba(0,0,0,0);
+    }
+    
+    #comedy-klein {
+        height: 0px;
+    }
+    
+    #hoofdfoto {
+        height: 0px;
+        
+    }
+    
+    /* CONTACT */ 
+    
+    .contact-main-content a:hover {
+        color: rgba(0,0,0,0.6);
+        text-decoration: underline;
+        transition: 0.1s;
+    }
+    
+    .contact-smlinks a:hover {
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+    
+    /* FOOTER */
+    
+    footer {
+        width: 100%;
+        max-width: 100%;
+        height: 100px;
+        max-height: 30px;
+        transition: max-height 0.2s;
+        grid-template-rows: 5px 90px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 2fr 1fr;
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .footer-nav {
+        grid-template-rows: 12px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap:20px;
+    }
+    
+    footer a {
+        font-weight: bold;
+        font-size: 0px;
+        transition: font-size 0.1s;
+        transition-delay: 0s;
+    }
+    
+    footer:hover {
+        max-height: 100px;
+    }
+    
+    footer:hover a{
+        font-size: 11px;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    
+    footer ul li a {
+        font-weight: normal;
+        font-size: 5px;
+    }
+    
+    .footer-contact a:hover {
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+    
+}
+
+
+/* Bigger Screen */
+
+@media screen and (min-width:850px) {
+    
+    body {
+        max-width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 100px;
+        grid-template-columns: 1fr 2fr 6fr 1fr;
+    }
+    
+    .logo-link {
+        grid-column: 2;
+    }
+    
+    .logo {
+        max-width: 200px;
+    }
+    
+    nav {
+        margin-top: 60px;
+    }
+    
+    /* INDEX */
+    
+    main {
+        margin: auto;
+        max-width: 80%;
+        margin-bottom: 40px;
+    }
+    
+    html, body {
+    }
+    
+    .index-main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 5vh;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        grid-row-gap: 1vw;
+        grid-column-gap: 1vw;
+    }
+    
+    .uitleg {
+        margin-bottom: 0px;
+    }
+    
+    #home-WD, #home-GO, #home-LD, #home-C4D {
+        height: 19vw;
+    }
+    
+    #home-WD a, #home-GO a, #home-LD a, #home-C4D a {
+        font-size: 1.2vw;
+        line-height: 3.5vw;
+        padding-top: 15.5vw;
+        padding-bottom: 0px;
+        transition: background 0.2s;
+        
+    }
+    
+    .index-main div a {
+        
+    }
+    
+
+#home-WD {
+    background-image: url(/Images/wolf.PNG);
+    background-size: cover;
+    background-position: right;
+}
+
+#home-GO {
+    background-image: url(/Images/Speciaal+Schijfkopie.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home-LD {
+    background-image: url(/Images/AfficheStartdag1819.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home-C4D {
+    background-image: url(/Images/low-poly-planet.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
+    #uitleg-bzelf {
+        min-height: 0px;
+        max-height: 170px;
+    }
+    
+    
+    /* PORTFOLIO */
+    
+    .portf-main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .portf-main-nav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+        left: 10%;
+        width: 80%;
+    }
+    
+    /* BERT ZELF */
+    
+    .bert-main {
+        margin-top: 40px;
+    }
+    
+    #bert-text {
+        width: 67%;
+        top: auto;
+        bottom: 320px;
+        left: 15%;
+        font-size: 12px;
+    }
+    
+    #bert-text h2 {
+        font-size: 15px;
+    }
+    
+    #klj-groot {
+        height: 450px;
+        background-position: top;
+    }
+    
+    #comedy-groot {
+        height: 450px;
+        background-position: top;
+    }
+    
+}
+
+@media screen and (min-width:1250px) {
+    /* PORTFOLIO */
+    
+    html, body {
+        min-height: 70%;
+        height: 90%;
+    }
+    
+    .index-main {
+        grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 1fr;
+        grid-row-gap: 0.2vw;
+        grid-column-gap: 0.2vw;
+    }
+    
+    #home-WD, #home-GO, #home-LD, #home-C4D { 
+        grid-row: 2;
+    }
+    
+    #home-WD a, #home-GO a, #home-LD a, #home-C4D a {
+        font-size: 1vw;
+    }
+    
+    #uitleg-bzelf {
+        position: absolute;
+        left: 72%;
+        top: 55px;
+        grid-gap: 5px;
+        min-height: 0px;
+        max-height: none;
+        padding: 10px;
+        padding-bottom: 20px;
+        line-height: 14px;
+        width: 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #uitleg-bzelf p {
+        font-size: 11px;
+    }
+    
+    #uitleg-bzelf p:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    #uitleg-bzelf h1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 30px;
+        margin-top: -35px;
+        margin-bottom: 0px;
+    }
+    
+    #uitleg-bzelf div {
+        background-image: url(/Images/bzelf-foto.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-row: 2;
+        grid-column: 2;
+        height: 180px;
+    }
+    
+    #uitleg-bzelf a {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        background-color: lightgrey;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    #uitleg-bzelf-foto {
+        width: 0;
+        height: 0;
+        min-height: 0;
+    }
+    
+    .portf-main {
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+    
+    .portf-main-nav {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    }
+}

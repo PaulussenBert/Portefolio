@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700');
+
+body {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    background-image: url(images/gettyimages-128250064.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 100px rgb(50,50,50);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    filter: alpha(Opacity=50);
+    opacity: 0.5; 
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0fr 1fr;
+}
+
+#logo {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: white;
+    height: 36px;
+    background-image: url(images/d2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#logoTxt {
+    color:              white;
+    background:         black;
+    mix-blend-mode:     multiply;
+    font:               bolder 17px 'Alfa Slab One';
+    text-align:         center;
+    margin:             0;
+    line-height: 18px;
+}
+
+nav {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 0fr 0fr 0fr 0fr 1fr 0fr 0fr;
+}
+
+banner {
+    background-color: grey;
+    font-size: 0px;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    text-align: center;
+    color: white;
+    background-image: url(images/d2.jpg);
+    background-size: cover;
+ 
+}
+
+nav a {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-weight: 700;
+}
+
+nav a:nth-child(5), nav a:nth-child(6), nav a:nth-child(7), nav a:nth-child(4) {
+    font-size: 0px;
+}
+
+/* MAIN */
+
+main {
+    background-color: black;
+    overflow: hidden;
+}
+
+#main-banner {
+    width: 600%;
+    background-image: black;
+    background-image: url(images/Banner/Tekengebied%201.jpg);
+    height: 120px;
+    background-position: left;
+    background-size: 100%;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    animation: bannerSlide 10s linear infinite;
+}
+
+#main-banner:hover {
+    filter: alpha(Opacity=50);
+    opacity: 0.5; 
+    cursor: pointer;
+}
+
+#main-banner-bollekes {
+    padding-top: 10px;
+    height: 20px; 
+    background-color: white;
+}
+
+#main-banner-bollekes-inner {
+    width: 70px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#main-banner-bollekes-inner div {
+    height: 10px;
+    width: 10px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: skyblue;
+}
+
+#bollekA {
+    animation: bollekeA-groot 10s linear infinite;
+}
+
+#bollekB {
+    animation: bollekeB-groot 10s linear infinite;
+}
+
+#bollekC {
+    animation: bollekeC-groot 10s linear infinite;
+}
+
+@keyframes bollekeA-groot {
+    0% {
+        transform: scale(1.2);
+    }
+    31%{
+        transform: scale(1.2);
+    }
+    33.4%{
+        transform: scale(0.8);
+    }
+    98% {
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bollekeB-groot {
+    0% {
+        transform: scale(0.8);
+    }
+    31%{
+        transform: scale(0.8);
+    }
+    33.4%{
+        transform: scale(1.2);
+    }
+    64% {
+        transform: scale(1.2);
+    }
+    66.7% {
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+@keyframes bollekeC-groot {
+    0% {
+        transform: scale(0.8);
+    }
+    64% {
+        transform: scale(0.8);
+    }
+    66.7% {
+        transform: scale(1.2);
+    }
+    98% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+
+@keyframes bannerSlide {
+    0% {
+        transform: translatex(-16.66666%);
+    }
+    31%{
+        transform: translateX(-16.66666%); 
+    }
+    33.4%{
+        transform: translateX(-33.33333%);
+    }
+    64% {
+        transform: translateX(-33.33333%);
+    }
+    66.7% {
+        transform: translateX(-50%);
+    }
+    98% {
+        transform: translateX(-50%);
+    }
+    99.9999% {
+        transform: translateX(-66.66666%);
+    }
+    100%{
+        transform: translateX(-16.66666%);
+    }
+}
+
+marquee {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: skyblue;
+    color: white;
+    font-size: 15px;
+}
+
+marquee a {
+    font-style: italic;
+}
+
+.thing-head {
+    background-color: rgb(50,50,50);
+    color: white;
+    margin-bottom: 2px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* FEATURED */
+
+#featured-wrap {
+    display: grid;
+    grid-template-columns: 0.4fr 2fr 2fr 0fr 0fr 0fr 0fr 0.4fr;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+#featured-head {
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.featured {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#featuredA, #featuredB {
+    padding: 10px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+#featuredA-title, #featuredB-title{
+    font-size: 17px;
+}
+
+#featuredA-author, #featuredB-author {
+    font-size: 14px;
+}
+
+#featuredA-info, #featuredB-info {
+    font-size: 13px;
+}
+
+.featured-info {
+    color: gray;
+    cursor: default;
+}
+
+.featured-title {
+    font-weight: 700;
+}
+
+.titleHeight {
+    height: 35px;
+}
+
+.titleBr {
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 5px !important;
+}
+
+.featured-author{
+    color: gray;
+    font-weight: 500;
+}
+
+.featuredImgClickable {
+    background-color: grey;
+}
+
+#featuredA-img, #featuredB-img {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-position: center;
+    border-top: 2px solid rgb(180,180,180);
+    border-right: 2px solid rgb(180,180,180);
+}
+
+#featuredA-img {
+    background-image: url(images/artaic-grey-birch-trees-aspen-titanium-tile-0121601-2-900x600.jpg);
+}
+
+#featuredB-img {
+    background-image: url(images/IMG_20180123_160555.jpg);
+}
+
+#featuredC, #featuredD, #featuredE, #featuredF {
+    font-size: 0px;
+}
+
+#featuredC-img, #featuredD-img, #featuredE-img, #featuredF-img {
+    background-image: url(images/artaic-grey-birch-trees-aspen-titanium-tile-0121601-2-900x600.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+.featured-Arrow {
+    background-color: rgb(240, 240, 240);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.featured-Arrow:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+#right-one {
+    background-image: url(images/arrow-right.png);
+    cursor: pointer;
+}
+
+#left-one {
+    background-image: url(images/arrow-left-faded.png);
+    cursor: pointer;
+}
+
+#featuredA:hover, #featuredB:hover {
+    border-width: 2px;
+    background-color: rgb(240,240,240);
+}
+
+/* ARTICLES */
+
+.articles {
+    background-color: white;
+    font-size: 0px;
+    display: grid;
+    grid-template-columns: 2fr 130px;
+    grid-template-rows: 1fr 3fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+#articleA, #articleB, #articleC, #articleD {
+    padding: 10px;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+#article-ImgA, #article-ImgB, #article-ImgC, #article-ImgD  {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+#article-ImgA {
+    background-image: url(images/21908780_10212602390921994_509699507_o.jpg);
+}
+
+#article-ImgB {
+    background-image: url(images/21908780_10212602390921994_509699507_o.jpg);
+}
+
+#article-ImgC {
+    background-image: url(images/21908780_10212602390921994_509699507_o.jpg);
+}
+
+#article-ImgD {
+    background-image: url(images/21908780_10212602390921994_509699507_o.jpg);
+}
+
+#scroll-down-One, #scroll-down-Two, #scroll-up-Two, #scroll-up-Three {
+        background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#scroll-up-Two, #scroll-up-Three {
+    background-image: url(images/arrow-up.png);
+    background-color: rgb(240,240,240);
+}
+
+#scroll-down-Two, #scroll-down-One {
+    background-image: url(images/arrow-down.png);
+    background-color: rgb(240,240,240);
+}
+
+#scroll-down-One {
+    height: 30px;
+}
+
+#scroll-down-One:hover, #scroll-down-Two:hover, #scroll-up-Two:hover, #scroll-up-Three:hover {
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+.articles a {
+    color: deepskyblue;
+}
+
+#art-TitelA, #art-TitelB, #art-TitelC, #art-TitelD {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.articles span {
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    float: right;
+}
+
+.articles p {
+    
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(40 40 40);
+    color: white;
+    padding: 10px 10px 20px 10px; 
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/*MEDIA QUERIES*/
+
+/* 2De */
+
+@media only screen and (min-width: 600px) {
+    body {
+        max-width: 600px;
+    }
+    
+    header {
+        grid-template-columns: 1.5fr 3fr;
+        grid-template-rows: 3fr 1fr;
+    }
+    
+    #logo {
+        height: 140px;
+        line-height: 50px;
+    }
+    
+    #logo p {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        line-height: 40px;
+        font-size: 55px;
+        text-shadow: 2px -2px grey;
+    }
+    
+    banner {
+        font-size: 25px;
+        
+        color: white;
+        text-align: left;
+        padding-top: 75px;
+        font-weight: bold;
+        padding-left: 10px;
+        text-shadow: 2px 1px black;
+    }
+    
+    nav {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0fr 0fr 1fr 0fr 0fr;
+    }
+    
+    nav a:nth-child(5), nav a:nth-child(4) {
+        font-size: 14px;
+    }
+    
+    #main-banner {
+        height: 280px;
+    }
+    
+    #featured-wrap {
+        grid-template-columns: 0.4fr 2fr 2fr 2fr 0fr 0fr 0fr 0.4fr;
+    }
+    
+    #featuredA-img, #featuredB-img, #featuredC-img {
+    width: 100%;
+    height: 100px;
+        
+    }
+    
+    #featuredC:hover {
+        border-width: 2px;
+    background-color: rgb(240,240,240);
+}
+    
+    #featuredC {
+        padding: 10px;
+        background-color: white;
+        border: 3px solid white;
+    }
+    
+    #featuredA-title, #featuredB-title, #featuredC-title{
+    font-size: 17px;
+    font-weight: bold;
+    }
+
+    #featuredA-author, #featuredB-author, #featuredC-author {
+    font-size: 14px;
+    }
+
+    #featuredA-info, #featuredB-info, #featuredC-info {
+    font-size: 13px;
+    }
+    
+    .diamond-division {
+    word-spacing: 5px;
+}
+}
+
+/* 3De */ 
+
+@media only screen and (min-width: 780px) {
+    body {
+        max-width: 780px;
+    }
+    
+    header {
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    nav {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr 0fr;
+    }
+    
+    nav a:nth-child(7), nav a:nth-child(6) {
+        font-size: 14px;
+    }
+    
+    
+    #main-banner {
+        height: 420px;
+    }
+    
+    #featured-wrap {
+        grid-template-columns: 0.4fr 2fr 2fr 2fr 2fr 0fr 0fr 0.4fr;
+    }
+    
+    #featuredA-img, #featuredB-img, #featuredC-img, #featuredD-img {
+    width: 100%;
+    height: 100px;
+        margin-bottom: 5px;
+    }
+    
+    #featuredD {
+        padding: 10px;
+        background-color: white;
+        border: 3px solid white;
+    }
+    
+    #featuredD:hover {
+        border-width: 2px;
+    background-color: rgb(240,240,240);
+}
+    
+    #featuredA-title, #featuredB-title, #featuredC-title, #featuredD-title{
+    font-size: 17px;
+    }
+
+    #featuredA-author, #featuredB-author, #featuredC-author, #featuredD-author {
+    font-size: 14px;
+    }
+
+    #featuredA-info, #featuredB-info, #featuredC-info, #featuredD-info {
+    font-size: 13px;
+    }
+    
+    .diamond-division {
+    word-spacing: 5px;
+}
+}
+
+/* 4De*/
+
+@media only screen and (min-width: 1080px) {
+    body {
+        max-width: 1080px;
+    }
+    
+    header {
+        grid-template-rows: 4fr 1fr;
+    }
+    
+    #logo {
+        height: 170px;
+    }
+    
+    #logo p {
+        padding-top: 60px;
+        padding-bottom: 20px;
+        line-height: 45px;
+        font-size: 55px;
+        text-shadow: 2px -2px grey;
+    }
+    
+    banner {
+        font-size: 30px;
+        padding-top: 100px;
+        text-shadow: 3px 2px black;
+    }
+    
+    nav {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr; 
+    }
+    
+    nav a:nth-child(7), nav a:nth-child(8) {
+        font-size: 14px;
+    }
+    
+    #main-banner {
+    }
+    
+    #featured-wrap {
+        grid-template-columns: 0.4fr 2fr 2fr 2fr 2fr 2fr 0fr 0.4fr;
+    }
+    
+        #featuredA-img, #featuredB-img, #featuredC-img, #featuredD-img, #featuredE-img {
+    width: 100%;
+    height: 120px;
+    }
+    
+    #featuredE {
+        padding: 10px;
+        background-color: white;
+        border: 3px solid white;
+    }
+    
+    #featuredE:hover {
+        border-width: 2px;
+    background-color: rgb(240,240,240);
+}
+    
+    #featuredA-title, #featuredB-title, #featuredC-title, #featuredD-title, #featuredE-title{
+    font-size: 17px;
+    }
+
+    #featuredA-author, #featuredB-author, #featuredC-author, #featuredD-author, #featuredE-author {
+    font-size: 14px;
+    }
+
+    #featuredA-info, #featuredB-info, #featuredC-info, #featuredD-info, #featuredE-info {
+    font-size: 13px;
+    }
+    
+    .diamond-division {
+    word-spacing: 5px;
+    }
+    
+}
+
+/* 5De */
+
+@media only screen and (min-width: 1480px) {
+    body {
+        max-width: 1480px;
+    }
+    
+    nav {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr; 
+    }
+        
+    #main-banner {
+        height: 620px;
+    }
+    
+    #featured-wrap {
+        grid-template-columns: 0.4fr 2fr 2fr 2fr 2fr 2fr 2fr 0.4fr;
+    }
+    
+    #featuredA-img, #featuredB-img, #featuredC-img, #featuredD-img, #featuredE-img, #featuredF-img {
+    width: 100%;
+    height: 120px;
+    }
+    
+    #featuredF {
+        padding: 10px;
+        background-color: white;
+        border: 3px solid white;
+    }
+    
+    #featuredF:hover {
+        border-width: 2px;
+    background-color: rgb(240,240,240);
+}
+    
+    #featuredA-title, #featuredB-title, #featuredC-title, #featuredD-title, #featuredE-title, #featuredF-title{
+    font-size: 17px;
+    }
+
+    #featuredA-author, #featuredB-author, #featuredC-author, #featuredD-author, #featuredE-author, #featuredF-author {
+    font-size: 14px;
+    }
+
+    #featuredA-info, #featuredB-info, #featuredC-info, #featuredD-info, #featuredE-info, #featuredF-info {
+    font-size: 13px;
+    }
+    
+    .diamond-division {
+    word-spacing: 5px;
+    }
+    
+}
