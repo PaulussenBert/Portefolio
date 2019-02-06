@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+
+body {
+    background-color: black;
+    width: 700px;
+    margin: auto;
+}
+
+.foreground {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.back-image {
+    position: absolute;
+    top: 0px;
+    width: 700px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.complex.com/complex/image/upload/c_scale,w_1920/fl_lossy,pg_1,q_auto/Vans_Wide_lead_xohqly.jpg);
+    z-index: -2;
+}
+
+.controls {
+    margin-top: -50px;
+    width: 460px;
+    z-index: 1;
+    margin-left: 150px;
+    background-image: url(https://shop.r10s.jp/smaclo/cabinet/vans_eley_page1.jpg);
+    background-size: cover;
+}
+
+.picture {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.PL {
+    position: relative;
+    top: -1570px;
+    left: -550px;
+    height: 1050px;
+    width: 500px;
+    background-image: url(https://www.bulletcreative.com/wp-content/uploads/2015/02/IMG_0324.jpg);
+    background-position: -200px;
+}
+
+.PC {
+    top: 1350px;
+    background-image: url(https://images.pexels.com/photos/702350/pexels-photo-702350.jpeg?cs=srgb&dl=alone-fashion-field-702350.jpg&fm=jpg);
+    width: 700px;
+    height: 700px;
+    z-index: -3;
+}
+
+.PR {
+    position: relative;
+    top: -2500px;
+    left: 750px;
+    height: 1050px;
+    width: 500px;
+    background-position: -50px;
+    background-image: url(https://media.allure.com/photos/57eaf026a433b89f5e4d8b1d/3:2/w_3000,h_2000,c_limit/vans%20street%20style%201.jpg);
+}
+
+.controls button {
+    font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0,0,0,0.8);
+  border: none;
+  color: white;
+width: 460px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer; 
+    transition: 0.2s;
+}
+
+.controls button:hover {
+    background-color: rgba(250,250,250,0.8);
+    color: black;
+}
