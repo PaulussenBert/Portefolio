@@ -1,0 +1,205 @@
+/* style */
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+  font-family: sans-serif;
+    background-image: url(https://sg.asia-city.com/sites/default/files/peperoni_pizzeria_dining_hall_0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: burlywood;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+header {
+    height: 220px;
+    width: 1190px;
+    margin: auto;
+    background-image: url(https://vignette.wikia.nocookie.net/clubpenguin/images/1/14/2_pizza_box_puffle_item.png/revision/latest?cb=20120816153840);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+        margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 75px;
+    padding-top: 10px;
+    width: 325px;
+    font-family: 'Pacifico', cursive;
+    line-height: 90px;
+    text-align: center;
+    color: white;
+
+    margin-top: 40px;
+    text-shadow: 2px 6px 0px black;
+}
+
+main {
+    width: 1190px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(	222, 184, 135 ,0.99);
+    border: 10px solid white;
+    box-shadow: 0px 0px 10px 5px rgba(250,250,250,0.7);
+}
+
+/* ---- selecties ---- */
+
+.selecties {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 2fr 3fr;
+    margin-bottom: 10px;
+}
+
+.selecties p {
+    margin: 0px;
+    padding: 0.5em 0em;
+    font-weight: bold;
+    text-align: right;
+    font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: 
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+    font-weight: bold;
+}
+
+.button:hover {
+  background-color: #FFF;
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #000;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* /// MENU /// */
+
+.menu {
+    width: 1170px;
+    margin: auto;
+}
+
+.menu-item {
+    background-color: rgba(250,250,250,0.9);
+    padding: 20px;
+    width: 330px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.fotos {
+    height: 200px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.ingredienten, h2, .prijzen  {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.gerechten {
+    margin-top: 10px;
+
+}
+
+.prijzen {
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+}
+
+.ingredienten {
+    font-size: 13px;
+    height: 40px;
+}
+
+.menu-item a {
+    float: right;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin-top: 16px;
+    border-radius: 14px;
+    font-size: 12px;
+    padding: 12px 14px 12px 14px;
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+.menu-item:nth-child(1) .fotos {background-image: url(Gerechten/al%20tonno.jpg)}
+.menu-item:nth-child(2) .fotos {background-image: url(Gerechten/american.png)}
+.menu-item:nth-child(3) .fotos {background-image: url(Gerechten/ananas.png)}
+.menu-item:nth-child(4) .fotos {background-image: url(Gerechten/bolognese.jpg)}
+.menu-item:nth-child(5) .fotos {background-image: url(Gerechten/borromea.jpg)}
+.menu-item:nth-child(6) .fotos {background-image: url(Gerechten/calipso.jpg)}
+.menu-item:nth-child(7) .fotos {background-image: url(Gerechten/capri.png)}
+.menu-item:nth-child(8) .fotos {background-image: url(Gerechten/capricciosa.jpg)}
+.menu-item:nth-child(9) .fotos {background-image: url(Gerechten/chorizo.jpg)}
+.menu-item:nth-child(10) .fotos {background-image: url(Gerechten/hawai.jpg)}
+.menu-item:nth-child(11) .fotos {background-image: url(Gerechten/kebab.jpg)}
+.menu-item:nth-child(12) .fotos {background-image: url(Gerechten/kebabspeciaal.jpg)}
+.menu-item:nth-child(13) .fotos {background-image: url(Gerechten/kip.png)}
+.menu-item:nth-child(14) .fotos {background-image: url(Gerechten/margarita.png)}
+.menu-item:nth-child(15) .fotos {background-image: url(Gerechten/marinara.png)}
+.menu-item:nth-child(16) .fotos {background-image: url(Gerechten/meatballs.png)}
+.menu-item:nth-child(17) .fotos {background-image: url(Gerechten/meatlovers.png)}
+.menu-item:nth-child(18) .fotos {background-image: url(Gerechten/napoli.png)}
+.menu-item:nth-child(19) .fotos {background-image: url(Gerechten/napolitana.jpg)}
+.menu-item:nth-child(20) .fotos {background-image: url(Gerechten/pita.png)}
+.menu-item:nth-child(21) .fotos {background-image: url(Gerechten/pollo.png)}
+.menu-item:nth-child(22) .fotos {background-image: url(Gerechten/quattrofromaggi.jpg)}
+.menu-item:nth-child(23) .fotos {background-image: url(Gerechten/quattrostagioni.jpg)}
+.menu-item:nth-child(24) .fotos {background-image: url(Gerechten/salami.jpg)}
+.menu-item:nth-child(25) .fotos {background-image: url(Gerechten/siciliana.jpg)}
+.menu-item:nth-child(26) .fotos {background-image: url(Gerechten/spijse.jpg)}
+.menu-item:nth-child(27) .fotos {background-image: url(Gerechten/vegetariana.png)}
+
