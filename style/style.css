@@ -304,6 +304,10 @@ h1 {
     transition: 0.25s;
 }
 
+.portf-main-nav .portf-main-nav-active:hover {
+    background-color: #c1272f;
+}
+
 .portf-main-nav-a {
     color: rgba(0,0,0, 0.2);
 }
@@ -321,10 +325,11 @@ h1 {
 }
 
 .portf-item a {
-    background-color: white;
-    padding: 5px;
-    font-size: 12px;
-    line-height: 20px;
+    display: block;
+    font-size: 13px;
+    text-align: left;
+    padding-bottom: 280px;
+    font-family: 'Fahkwang', sans-serif;
 }
 
 .portf-item::before {
