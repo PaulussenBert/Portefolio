@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+body {
+    margin: 0px; 
+    overflow: hidden;
+    background-image: url(https://images.pexels.com/photos/40799/paper-colorful-color-loose-40799.jpeg?cs=srgb&dl=close-up-colorful-colors-40799.jpg&fm=jpg);
+    background-size: cover;
+    background-position: right;
+    
+    /*Houdt selecteerbare text tegen bij het tekenen */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    
+}
+
+h1 {
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Coiny', cursive;
+    transform: 
+    line-height: 10px;
+}
+
+header {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+header div {
+    display: inline-block;
+    padding: 20px 15px 15px 15px;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: 'Coiny', cursive;
+    background-color: white;
+}
+
+header div:nth-child(1) {
+    font-size: 20px;
+}
+
+header div:nth-child(1):hover {
+    background-color: white;
+    cursor: default;
+}
+
+header div:hover {
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+.ColorPicker {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    grid-gap: 15px;
+}
+
+.ColorPicker div  {
+    height: 24px;
+    width: 24px;
+}
+
+.ColorPicker div:last-child {
+    height: 32px;
+    width: 32px;
+    background-image: url(https://img.icons8.com/metro/1600/recurring-appointment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.ColorPicker div:last-child:hover {
+    border: none;
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+
+.ColorPickerBlack {
+    background-color: black;
+}
+
+.ColorPickerWhite {
+    background-color: white;
+}
+
+.ColorPickerYellow {
+    background-color: yellow;
+}
+
+.ColorPickerRed {
+    background-color: red;
+}
+
+.ColorPickerBlue {
+    background-color: blue;
+}
+
+.ColorPickerBrown {
+    background-color: brown;
+}
+
+.ColorPickerOrange {
+    background-color: orange;
+}
+
+.ColorPickerGreen {
+    background-color: green;
+}
+
+.ColorPickerPink {
+    background-color: pink;
+}
+
+.ColorPickerPurple {
+    background-color: purple;
+}
+
+.ColorPicker div {
+    border: 4px solid rgba(100,100,100,0.1);
+    border-radius: 6px;
+}
+
+.ColorPicker div:hover {
+    border: 4px solid rgba(250,250,250,0.4);
+}
+
+.ColorPicker .active {
+    border: 4px solid rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 1450px) {
+    header{
+        top: 70px;
+        
+    }
+    .ColorPicker {
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        top: 70px;
+        
+    }
+    .ColorPicker {
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ColorPicker {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-gap: 5px;
+    }
+    
+    header div {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
