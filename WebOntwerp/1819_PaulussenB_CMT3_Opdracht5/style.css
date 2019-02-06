@@ -1,0 +1,15 @@
+* {margin: 0; padding: 0;}
+
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+
+#map {
+  width: 100vw;
+  height: 100vh;
+    position: absolute;
+    /* Tekst popup waar gebruiker is opmaken */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
