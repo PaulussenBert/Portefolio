@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>p5.js Opdracht 9</title>
+
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+    
+    <h1>Color me Crazy</h1>
+    
+    <header>
+        <div>Pick your drawing:</div>
+        <div onclick="KleurplaatA()">Building</div>
+        <div onclick="KleurplaatB()">Tree</div>
+        <div onclick="KleurplaatC()">Bear</div>
+    </header>
+    
+    <div class="ColorPicker">
+        <div class="ColorPicker-color ColorPickerBlack" onclick="colorSwitch('black')" id="black"></div>
+        <div class="ColorPicker-color ColorPickerWhite" onclick="colorSwitch('white')" id="white"></div>
+        <div class="ColorPicker-color ColorPickerBlue" onclick="colorSwitch('blue')" id="blue"></div>
+        <div class="ColorPicker-color ColorPickerGreen" onclick="colorSwitch('green')" id="green"></div>
+        <div class="ColorPicker-color ColorPickerYellow" onclick="colorSwitch('yellow')" id="yellow"></div>
+        <div class="ColorPicker-color ColorPickerOrange" onclick="colorSwitch('orange')" id="orange"></div>
+        <div class="ColorPicker-color ColorPickerRed" onclick="colorSwitch('red')" id="red"></div>
+        <div class="ColorPicker-color ColorPickerPink" onclick="colorSwitch('pink')" id="pink"></div>
+        <div class="ColorPicker-color ColorPickerPurple" onclick="colorSwitch('purple')" id="purple"></div>
+        <div class="ColorPicker-color ColorPickerBrown" onclick="colorSwitch('brown')" id="brown"></div>
+        <div onclick="Clear()"></div>
+    </div>
+       
+    
+    <script src="p5.min.js"></script>
+    <script  src="script.js"></script>
+</body>
+
+</html>
