@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny|ZCOOL+KuaiLe');
+
+body {
+    margin: 0px; 
+    overflow: hidden;
+    background-image: url(https://images.pexels.com/photos/40799/paper-colorful-color-loose-40799.jpeg?cs=srgb&dl=close-up-colorful-colors-40799.jpg&fm=jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+
+
+h1 {
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Coiny', cursive;
+}
+
+header {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+header div {
+    display: inline-block;
+    padding: 20px 15px 15px 15px;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: 'Coiny', cursive;
+    background-color: white;
+}
+
+header div:nth-child(1) {
+    font-size: 20px;
+}
+
+header div:nth-child(1):hover {
+    background-color: white;
+    cursor: default;
+}
+
+header div:hover {
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
